@@ -24,11 +24,14 @@ body{
     background: url(../images/bg-pattern-top-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: auto;
+        margin-left: auto;
 }
 
 .container{
     padding-block: 80px;
     max-width: 350px;
+    
 }
 
 .hero-content{
@@ -105,4 +108,73 @@ body{
     color: var(--white);
     font-weight: 500;
     line-height: 22px;
+}
+
+@media (min-width: 1440px){
+    .hero-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-wrapper{
+        margin-right: 5rem;
+    }
+
+    .hero-title,
+    .hero-para{
+        width: 445px;
+        text-align: left;
+    }
+
+    .hero-title{
+        font-size: var(--fs-900);
+    }
+
+    .review-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+
+    .rating-wrapper{
+        width: 445px;
+        margin-bottom: 0;
+    }
+
+    .rating-wrapper-1{
+        position: relative;
+        right: 80px;
+    }
+
+    .rating-wrapper-2{
+        position: relative;
+        right: 40px;
+    }
+
+    .user-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .user{
+        width: 650px;
+    }
+
+    .user-two{
+        position: relative;
+        top: 50px;
+    }
+
+    .user-three{
+        position: relative;
+        top: 100px;
+    }
+
+    .buyer-comment{
+        margin-inline: 10px;
+        width: 250px;
+        font-size: 13px;
+    }
 }
