@@ -25,13 +25,12 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: auto;
-        margin-left: auto;
+    margin-left: auto;
 }
 
 .container{
     padding-block: 80px;
     max-width: 350px;
-    
 }
 
 .hero-content{
@@ -111,6 +110,15 @@ body{
 }
 
 @media (min-width: 1440px){
+    body{
+        font-family: 'Spartan', sans-serif;
+        background: url(../images/bg-pattern-top-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .hero-content{
         display: flex;
         justify-content: center;
@@ -162,14 +170,18 @@ body{
         width: 650px;
     }
 
+    .user-one{
+        position: relative;
+        bottom: 50px;
+    }
+
     .user-two{
         position: relative;
-        top: 50px;
+        bottom: 25px;
     }
 
     .user-three{
         position: relative;
-        top: 100px;
     }
 
     .buyer-comment{
